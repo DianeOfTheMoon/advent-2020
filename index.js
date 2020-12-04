@@ -20,6 +20,7 @@ var questions = [
         type: 'list',
         name: 'day',
         message: 'What day to run?',
+        default: parts.length - 1,
         choices: Array(parts.length).fill().map((val, index) => index + 1)
     },
     {
